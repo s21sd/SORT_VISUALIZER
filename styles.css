@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:ital,wght@0,700;1,700&family=Prompt:wght@300&family=Tilt+Neon&display=swap');
+
+body {
+    margin: 0px;
+    font-family: 'Kumbh Sans', sans-serif;
+
+}
+
+.navbar {
+    background-color: aquamarine;
+    padding: 25px;
+}
+
+.heading {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.sec-div {
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.secondone {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    padding: 45px;
+    margin: 42px;
+    font-size: 25px;
+    border-radius: 30px;
+
+}
+
+.heading-one {
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.heading-two {
+    font-style: italic;
+    margin-bottom: 32px;
+    margin-left: 20px;
+}
+
+.span {
+    margin-top: 12px;
+    background-color: black;
+    font-size: 42px;
+    color: white;
+    padding: 5px;
+    border-radius: 12px;
+}
+
+.span2 {
+    font-size: 22px;
+}
+
+.secondtwo img {
+    width: 40vw;
+    height: 74vh;
+}
+
+.start {
+    width: 30%;
+    height: 60px;
+    background-color: black;
+    color: white;
+    padding: 4px;
+    font-size: 32px;
+    border: none;
+    border-radius: 12px;
+    margin-left: 20px;
+    margin-top: 52px;
+
+}
+
+.start:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.5);
+    animation: rotate 2s linear infinite;
+}
+
+.third-div {
+    margin-left: 32px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.basic {
+    font-size: 50px;
+    text-align: center;
+    padding: 25px;
+    border-radius: 30px;
+    width: 80%;
+    margin: auto;
+}
+
+.card {
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(to bottom right, aquamarine, rgb(130, 205, 205));
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 42px;
+}
+
+.card-content {
+    text-align: center;
+    color: black;
+    padding: 20px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.5);
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
