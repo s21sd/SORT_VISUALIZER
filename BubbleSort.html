@@ -7,17 +7,183 @@
     <title>BUBBLE SORT</title>
 </head>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+    body {
+        font-family: 'Open Sans', sans-serif;
+        background-color: aquamarine;
+    }
+
     .parent-div {
         display: flex;
         flex-wrap: nowrap;
+        align-items: center;
         justify-content: center;
+
+    }
+
+    .innerDiv {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        color: black;
+        font-size: 29px;
+        margin: 10px;
+        width: 70px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .strtbtn {
+        background-color: black;
+        color: white;
+        border-radius: 0.6em;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1;
+        margin: 32px;
+        padding: 1.2em 2.8em;
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        border: none;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .heading1 {
+        background-color: black;
+        width: fit-content;
+        color: white;
+        padding: 12px;
+        border-radius: 12px;
+        font-size: 32px;
+        font-weight: 900;
+        margin: 32px;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .parent {
+        display: flex;
+        justify-content: center;
+        border-radius: 12px;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .first {
+        display: grid;
+        width: 70vw;
+        margin: 32px;
+        font-size: 22px;
+
+    }
+
+    .second {
+        margin-top: 42px;
+        font-size: 32px;
+        width: 40vw;
+    }
+
+    .table {
+        padding: 12px;
+    }
+
+    .table td {
+        border-right: 2px solid #d17f3f;
+        border-top: 2px solid #d17f3f;
+    }
+
+    .implementation {
+        margin: 32px;
+    }
+
+    .icons {
+        display: flex;
+        background-color: black;
+        width: fit-content;
+        border-radius: 12px;
+    }
+
+    .icons img {
+        width: 45px;
+        margin: 12px;
+        cursor: pointer;
+        border-radius: 12px;
+    }
+
+    .images {
+        margin-top: 12px;
+    }
+
+    .cimg {
+        border-radius: 12px;
+        width: 50%;
+        height: 600px;
     }
 </style>
 
 <body>
-    <h1>BubbleSort</h1>
+    <h1 class="heading1">BubbleSort</h1>
     <div class="parent-div"></div>
     <button class="strtbtn">Start</button>
+    <!-- For DESCRIPTION -->
+    <div class="parent">
+        <div class="first">
+            <h1 class="heading1">DESCRIPTION</h1>
+            <h2>Bubble Sort is an iterative sorting algorithm that imitates the movement of bubbles in sparkling water.
+                The bubbles represents the elements of the data structure.
+
+                The bigger bubbles reach the top faster than smaller bubbles, and this algorithm works in the same way.
+                It iterates through the data structure and for each cycle compares the current element with the next
+                one, swapping them if they are in the wrong order.</h1>
+        </div>
+        <div class="second">
+            <h2 class="heading1">COMPLEXITY</h2>
+            <table class="table">
+                <tr>
+                    <td>Average Complexity</td>
+                    <td>O(n^2)</td>
+                </tr>
+                <tr>
+                    <td>Best Case</td>
+                    <td>O(n)</td>
+                </tr>
+                <tr>
+                    <td>Worst Case</td>
+                    <td>O(n^2)</td>
+                </tr>
+                <tr>
+                    <td>Space Complexity</td>
+                    <td>O(1)</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+    <!-- For the Code  -->
+    <h1 class="heading1">Implementations</h1>
+    <div class="implementation">
+        <div class=" icons">
+            <img class="c" id="c" src="./img/c_icon.png" alt="c" />
+            <img class="cpp" id="cpp" src="./img/cpp_icon.png" alt="cpp" />
+            <img class="java" id="java" src="./img/java_icon.png" alt="java" />
+            <img class="js" id="js" src="./img/javascript_icon.png" alt="javascript" />
+            <img class="py" id="py" src="./img/python_icon.png" alt="python" />
+
+        </div>
+        <div class="images">
+            <img class="cimg" id="impImg" src="./img/bubblec.png" />
+        </div>
+    </div>
+
+
 
 </body>
 <script src="BubbleSort.js"></script>
