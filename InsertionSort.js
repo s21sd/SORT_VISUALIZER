@@ -1,4 +1,3 @@
-
 let c = document.getElementById('c');
 let cpp = document.getElementById('cpp');
 let java = document.getElementById('java');
@@ -12,43 +11,40 @@ let btn = document.getElementsByClassName('strtbtn');
 let i = 0;
 arr.forEach(e => {
     let innerDiv = document.createElement('div');
-    innerDiv.style.height = (e * 6 + 'px');
+    innerDiv.style.height = e * 6 + 'px';
     innerDiv.style.backgroundColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-    innerDiv.textContent = e
+    innerDiv.textContent = e;
     innerDiv.setAttribute('id', 'elem' + i);
     i++;
     innerDiv.classList.add('innerDiv');
     parentdiv[0].appendChild(innerDiv);
-})
+});
 
-btn[0].addEventListener("click", () => myfunction(arr));
+btn[0].addEventListener("click", () => insertionSort(arr));
 
 const sleep = (time) => {
-    return new Promise(resolve => setTimeout(resolve, time))
-}
-async function myfunction(arr) {
-    // console.log("woking");
-    for (let i = 0; i < arr.length; i++) {
-        for (let j = 0; j < (arr.length - i - 1); j++) {
+    return new Promise(resolve => setTimeout(resolve, time));
+};
+
+async function insertionSort(arr) {
+    for (let i = 1; i < arr.length; i++) {
+        let key = arr[i];
+        let j = i - 1;
+
+        while (j >= 0 && arr[j] > key) {
             await sleep(700);
-            if (arr[j] > arr[j + 1]) {
-                swapNumber(arr, j);
-                swapColorHeight(j);
-            }
+            arr[j + 1] = arr[j];
+            swapColorHeight(j, j + 1);
+            j--;
         }
+
+        arr[j + 1] = key;
     }
-
 }
 
-function swapNumber(arr, j) {
-    let temp = arr[j];
-    arr[j] = arr[j + 1];
-    arr[j + 1] = temp;
-}
-
-function swapColorHeight(j) {
+function swapColorHeight(j, k) {
     let a = 'elem' + j;
-    let b = 'elem' + (j + 1);
+    let b = 'elem' + k;
     let e1 = document.getElementById(a);
     let e2 = document.getElementById(b);
     let bg1 = e1.style.backgroundColor;
@@ -57,25 +53,25 @@ function swapColorHeight(j) {
     let h2 = e2.clientHeight;
     e1.style.backgroundColor = bg2;
     e2.style.backgroundColor = bg1;
-    e1.style.height = h2 + "px";
-    e2.style.height = h1 + "px";
+    e1.style.height = h2 + 'px';
+    e2.style.height = h1 + 'px';
     let temp = e1.textContent;
     e1.textContent = e2.textContent;
-    e2.textContent = temp
+    e2.textContent = temp;
 }
 
 c.addEventListener("click", () => {
-    impImg.src = "./img/bubblec.png"
+    impImg.src = "./img/Insertionc.png"
 })
 cpp.addEventListener("click", () => {
-    impImg.src = "./img/bubblecpp.png"
+    impImg.src = "./img/Insertioncpp.png"
 })
 java.addEventListener("click", () => {
-    impImg.src = "./img/bubblejava.png"
+    impImg.src = "./img/Insertionjava.png"
 })
 js.addEventListener("click", () => {
-    impImg.src = "./img/bubblejs.png"
+    impImg.src = "./img/Insertionjs.png"
 })
 py.addEventListener("click", () => {
-    impImg.src = "./img/bubblepy.png"
+    impImg.src = "./img/Insertionpy.png"
 })

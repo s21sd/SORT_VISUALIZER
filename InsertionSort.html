@@ -5,24 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="BubbleSort.css">
-    <title>BUBBLE SORT</title>
+    <title>Insertion Sort</title>
 </head>
 
-
 <body>
-    <h1 class="heading1">BubbleSort</h1>
+    <h1 class="heading1">Insertion Sort</h1>
     <div class="parent-div"></div>
     <button class="strtbtn">Start</button>
     <!-- For DESCRIPTION -->
     <div class="parent">
         <div class="first">
             <h1 class="heading1">DESCRIPTION</h1>
-            <h2>Bubble Sort is an iterative sorting algorithm that imitates the movement of bubbles in sparkling water.
-                The bubbles represents the elements of the data structure.
-
-                The bigger bubbles reach the top faster than smaller bubbles, and this algorithm works in the same way.
-                It iterates through the data structure and for each cycle compares the current element with the next
-                one, swapping them if they are in the wrong order.</h1>
+            <h2>Insertion sort is a simple sorting algorithm that builds the final sorted array one item at a time. It's
+                less performant than advanced sorting algorithms, but it can still have some advantages: it's really
+                easy to implement and it's efficient on small data structures almost sorted.
+                The algorithm divides the data structure in two sublists: a sorted one, and one still to sort.
+                Initially, the sorted sublist is made up of just one element and it gets progressively filled. For every
+                iteration, the algorithm picks an element on the unsorted sublist and inserts it at the right place in
+                the sorted sublist.
+            </h2>
         </div>
         <div class="second">
             <h2 class="heading1">COMPLEXITY</h2>
@@ -60,13 +61,13 @@
 
         </div>
         <div class="images">
-            <img class="cimg" id="impImg" src="./img/bubblec.png" />
+            <img class="cimg" id="impImg" src="./img/Insertionc.png" />
         </div>
     </div>
 
 
 
 </body>
-<script src="BubbleSort.js"></script>
+<script src="InsertionSort.js"></script>
 
 </html>

@@ -89,6 +89,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    font-size: 22px;
 
 }
 
