@@ -81,4 +81,5 @@ function swapColorHeight(index, height) {
     let a = 'elem' + index;
     let e1 = document.getElementById(a);
     e1.style.height = height * 6 + 'px';
+    e1.textContent = height;
 }

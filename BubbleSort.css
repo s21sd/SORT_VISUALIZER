@@ -1,120 +1,133 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 
-    body {
-        font-family: 'Open Sans', sans-serif;
-        background-color: aquamarine;
-    }
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: aquamarine;
+}
 
-    .parent-div {
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: center;
+.parent-div {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
 
-    }
+}
 
-    .innerDiv {
-        display: grid;
-        justify-content: center;
-        align-content: center;
-        color: black;
-        font-size: 29px;
-        margin: 10px;
-        width: 70px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+.innerDiv {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    color: black;
+    font-size: 29px;
+    margin: 10px;
+    width: 70px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
 
-    }
+}
 
-    .strtbtn {
-        background-color: black;
-        color: white;
-        border-radius: 0.6em;
-        cursor: pointer;
-        font-size: 1rem;
-        font-weight: 400;
-        line-height: 1;
-        margin: 32px;
-        padding: 1.2em 2.8em;
-        text-decoration: none;
-        text-align: center;
-        text-transform: uppercase;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
-        border: none;
-        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+.strtbtn {
+    background-color: black;
+    color: white;
+    border-radius: 0.6em;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 32px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border: none;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
 
-    }
+}
 
-    .heading1 {
-        background-color: black;
-        width: fit-content;
-        color: white;
-        padding: 12px;
-        border-radius: 12px;
-        font-size: 32px;
-        font-weight: 900;
-        margin: 32px;
-        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+.heading1 {
+    background-color: black;
+    width: fit-content;
+    color: white;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 32px;
+    font-weight: 900;
+    margin: 32px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
 
-    }
+}
 
-    .parent {
-        display: flex;
-        justify-content: center;
-        border-radius: 12px;
-        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
-        margin: 12px;
-    }
+.parent {
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    margin: 12px;
+}
 
-    .first {
-        display: grid;
-        width: 70vw;
-        margin: 32px;
-        font-size: 22px;
+.first {
+    display: grid;
+    width: 70vw;
+    margin: 32px;
+    font-size: 22px;
 
-    }
+}
 
-    .second {
-        margin-top: 42px;
-        font-size: 32px;
-        width: 40vw;
-    }
+.second {
+    margin-top: 42px;
+    font-size: 32px;
+    width: 40vw;
+}
 
-    .table {
-        padding: 12px;
-    }
+.table {
+    padding: 12px;
+}
 
-    .table td {
-        border-right: 2px solid #d17f3f;
-        border-top: 2px solid #d17f3f;
-    }
+.table td {
+    border-right: 2px solid #d17f3f;
+    border-top: 2px solid #d17f3f;
+}
 
-    .implementation {
-        margin: 32px;
-    }
+.implementation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 32px;
+}
 
-    .icons {
-        display: flex;
-        background-color: black;
-        width: fit-content;
-        border-radius: 12px;
-    }
+.first-div {
+    width: 50%;
+}
 
-    .icons img {
-        width: 45px;
-        margin: 12px;
-        cursor: pointer;
-        border-radius: 12px;
-    }
+.icons {
+    display: flex;
+    background-color: black;
+    width: fit-content;
+    border-radius: 12px;
+}
 
-    .images {
-        margin-top: 12px;
-    }
+.icons img {
+    width: 45px;
+    margin: 12px;
+    cursor: pointer;
+    border-radius: 12px;
+}
 
-    .cimg {
-        border-radius: 12px;
-        width: 50%;
-        height: 600px;
-    }
+.images {
+    margin-top: 12px;
+}
+
+.cimg {
+    border-radius: 12px;
+    width: 100%;
+    height: 600px;
+}
+
+.gifs {
+    width: 450px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
