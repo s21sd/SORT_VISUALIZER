@@ -7,7 +7,7 @@ function insertionSort() {
     // console.log("working");
 }
 function bubbleSort() {
-    window.location.href = 'http://127.0.0.1:5500/BubbleSort.html'
+    window.location.href = 'https://s21sd.github.io/SORT_VISUALIZER/BubbleSort.html'
     // console.log("working");
 }
 function quickSort() {
