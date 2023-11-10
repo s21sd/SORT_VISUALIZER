@@ -1,3 +1,9 @@
+let c = document.getElementById('c');
+let cpp = document.getElementById('cpp');
+let java = document.getElementById('java');
+let js = document.getElementById('js');
+let py = document.getElementById('py');
+let impImg = document.getElementById("impImg");
 let arr = [50, 40, 30, 20, 10, 80, 14];
 let parentdiv = document.querySelector('.parent-div');
 let btn = document.querySelector('.strtbtn');
@@ -83,3 +89,21 @@ function swapColorHeight(index, height) {
     e1.style.height = height * 6 + 'px';
     e1.textContent = height;
 }
+
+
+
+c.addEventListener("click", () => {
+    impImg.src = "./img/mergec.PNG"
+})
+cpp.addEventListener("click", () => {
+    impImg.src = "./img/Mergecpp.PNG"
+})
+java.addEventListener("click", () => {
+    impImg.src = "./img/meegejava.PNG"
+})
+js.addEventListener("click", () => {
+    impImg.src = "./img/mergejs.PNG"
+})
+py.addEventListener("click", () => {
+    impImg.src = "./img/mergepyth.PNG"
+})
